@@ -1,5 +1,23 @@
 * {
     font-family:'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
+.content {
+    display: flex;
+    flex-flow: column;
+    flex: 1 100%;
+}
+
+.hero, tiles, .quote, .action {
+    flex: 1 100%;
 }
 
 footer, .hero {
@@ -10,4 +28,31 @@ footer, .hero {
     color: azure;
     font-size: 48px;
     font-weight: 900;
+}
+
+.hero-second, .links {
+    font-size: 18px;
+    color: azure;
+}
+
+.logo {
+    font-size: 24px;
+    color: black;
+}
+
+button, .action {
+    background-color:dodgerblue;
+}
+
+.info {
+    font-size: 36px;
+    font-weight: 900;
+    color: darkblue;
+}
+
+.quote {
+    background-color: grey;
+    font-size: 36px;
+    color: aliceblue;
+    font-weight: 300;
 }
