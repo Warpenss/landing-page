@@ -13,11 +13,18 @@ body {
 .content {
     display: flex;
     flex-flow: column;
-    flex: 1 100%;
+}
+
+header, .hero {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    display: flex;
 }
 
 .hero, tiles, .quote, .action {
-    flex: 1 100%;
 }
 
 footer, .hero {
@@ -55,4 +62,8 @@ button, .action {
     font-size: 36px;
     color: aliceblue;
     font-weight: 300;
+}
+
+img { 
+    max-width: 50vh;
 }
