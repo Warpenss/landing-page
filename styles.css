@@ -24,9 +24,6 @@ header, .hero {
     display: flex;
 }
 
-.hero, tiles, .quote, .action {
-}
-
 footer, .hero {
     background-color:darkcyan;
 }
@@ -65,5 +62,28 @@ button, .action {
 }
 
 img { 
-    max-width: 50vh;
+    width: 40vw;
+    display: block;
+}
+
+.items {
+    display: flex;
+    flex-flow: row;
+}
+
+.action-container {
+    display: flex;
+    align-items: center;
+}
+
+.author {
+    justify-self: flex-end;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center-content {
+    padding: 0 10vw;
 }
