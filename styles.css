@@ -37,8 +37,7 @@ img {
 .items {
     display: flex;
     flex-flow: row wrap;
-    gap: 0;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .action-container {
@@ -65,6 +64,11 @@ a {
     align-items: center;
 }
 
+ .tile-text {
+    text-align: center;
+    margin-top: 10px;
+}
+
 footer {
     text-align: center;
 }
@@ -73,10 +77,27 @@ footer {
     display: flex;
     flex-flow: column;
     align-items: center;
-    width: 45vh;
+    width: 25%;
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 .tile-image img {
-    width: 45vh;
-    height: 45vh;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Medium screens: 2 tiles per row */
+@media (max-width: 1023px) {
+    .tile-container {
+        width: 50%;
+    }
+}
+
+/* Small screens: 1 tile per row */
+@media (max-width: 767px) {
+    .tile-container {
+        width: 100%;
+    }
 }
