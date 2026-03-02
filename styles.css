@@ -1,8 +1,9 @@
 * {
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
     font-size: x-large;
+    color: black;
 }
 
 body {
@@ -18,19 +19,22 @@ body {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
 
 .hero {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 5%;
 }
 
 .links {
     display: flex;
+    gap: 3vw;
 }
 
-img { 
-    width: 40vw;
+img {
     display: block;
 }
 
@@ -55,16 +59,17 @@ a {
 }
 
 .center-content {
-    margin: 0 10vw;
+    margin: 5vh 10vw;
 }
 
 .tiles {
     display: flex;
     flex-flow: column;
     align-items: center;
+    gap: 1%;
 }
 
- .tile-text {
+.tile-text {
     text-align: center;
     margin-top: 10px;
 }
@@ -77,21 +82,52 @@ footer {
     display: flex;
     flex-flow: column;
     align-items: center;
-    width: 25%;
-    box-sizing: border-box;
-    padding: 10px;
+    width: 24%;
 }
 
 .tile-image img {
     width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
+}
+
+.logo a {
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+.hero-main {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.hero-second {
+    font-size: 0.9rem;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero>div {
+    width: 50%;
 }
 
 /* Medium screens: 2 tiles per row */
 @media (max-width: 1023px) {
     .tile-container {
-        width: 50%;
+        width: 49%;
+    }
+
+    .hero {
+        flex-flow: column;
+        text-align: center;
+    }
+
+    .hero>div {
+        width: 100%;
     }
 }
 
