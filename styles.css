@@ -66,12 +66,12 @@ a {
     display: flex;
     flex-flow: column;
     align-items: center;
-    gap: 1%;
+    gap: 5vh;
 }
 
 .tile-text {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 2vh;
 }
 
 footer {
@@ -115,6 +115,19 @@ footer {
     width: 50%;
 }
 
+.info {
+    text-align: center;
+}
+
+.quote { 
+    display: flex;
+    flex-flow: column;
+}
+
+.author {
+    align-self: flex-end;
+
+}
 /* Medium screens: 2 tiles per row */
 @media (max-width: 1023px) {
     .tile-container {
@@ -124,10 +137,15 @@ footer {
     .hero {
         flex-flow: column;
         text-align: center;
+        row-gap: 5vh;
     }
 
     .hero>div {
         width: 100%;
+    }
+
+    .items {
+        row-gap: 5vh;
     }
 }
 
