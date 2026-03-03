@@ -132,7 +132,6 @@ footer {
     display: flex;
     flex-flow: column;
     font-style: italic;
-    
 }
 
 .author {
@@ -153,7 +152,7 @@ button {
 }
 
 .button-container {
-    flex: 1 0 auto;
+    flex: 0 0 auto;
 }
 
 .main-text {
