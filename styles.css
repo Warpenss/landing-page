@@ -154,4 +154,8 @@ footer {
     .tile-container {
         width: 100%;
     }
+    
+    .links > a {
+        font-size: 0.7rem;
+    }
 }
