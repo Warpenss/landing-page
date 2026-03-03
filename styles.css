@@ -2,8 +2,12 @@
     font-family: 'Courier New', Courier, monospace;
     margin: 0;
     padding: 0;
-    font-size: x-large;
+    font-size: 1.2rem;
     color: black;
+}
+
+.header-background {
+    background-color: #E0F7FA;
 }
 
 body {
@@ -48,6 +52,8 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-flow: row;
+    column-gap: 1rem;
 }
 
 .author {
@@ -72,6 +78,7 @@ a {
 .tile-text {
     text-align: center;
     margin-top: 2vh;
+    font-size: 1rem;
 }
 
 footer {
@@ -92,16 +99,17 @@ footer {
 }
 
 .logo a {
-    font-weight: bold;
-    font-size: xx-large;
+    font-weight: 900;
+    font-size: 3vh;
 }
 
 .hero-main {
-    font-weight: bold;
+    font-weight: 900;
     font-size: 1.1rem;
 }
 
 .hero-second {
+    margin-top: 1rem;
     font-size: 0.9rem;
 }
 
@@ -117,17 +125,51 @@ footer {
 
 .info {
     text-align: center;
+    font-weight: 900;
 }
 
 .quote { 
     display: flex;
     flex-flow: column;
+    font-style: italic;
+    
 }
 
 .author {
     align-self: flex-end;
 
 }
+
+button {
+    margin-top: 1rem;
+    padding: 0.5em 1.5em;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.action-container button {
+    margin-top: 0;
+}
+
+.button-container {
+    flex: 1 0 auto;
+}
+
+.main-text {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.secondary-text {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.links > a {
+    font-size: 2vh;
+}
+
 /* Medium screens: 2 tiles per row */
 @media (max-width: 1023px) {
     .tile-container {
@@ -155,7 +197,9 @@ footer {
         width: 100%;
     }
     
-    .links > a {
-        font-size: 0.7rem;
+    .action-container {
+        flex-flow: column;
+        gap: 1rem;
+        text-align: center;
     }
 }
