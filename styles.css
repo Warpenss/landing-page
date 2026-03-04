@@ -7,7 +7,27 @@
 }
 
 .header-background {
-    background-color: #E0F7FA;
+    background-color: whitesmoke;
+}
+
+.hero-background {
+    background-color: white;
+}
+
+.tiles-background {
+    background-color: whitesmoke;
+}
+
+.quote-background {
+    background-color: white;
+}
+
+.action-background {
+    background-color: whitesmoke;
+}
+
+.footer-background {
+    background-color: white;
 }
 
 body {
@@ -145,6 +165,7 @@ button {
     font-size: 1rem;
     border: none;
     cursor: pointer;
+    background-color: lightgrey;
 }
 
 .action-container button {
