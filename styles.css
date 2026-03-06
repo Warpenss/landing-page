@@ -7,11 +7,6 @@
     border-radius: 1rem;
 }
 
-*:hover{
-    transform: scale(1.05);
-    transition: all 0.1s ease;
-}
-
 .header-background {
     background-color: whitesmoke;
     
